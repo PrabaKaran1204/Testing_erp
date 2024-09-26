@@ -4,6 +4,9 @@ app_publisher = "prabakaran"
 app_description = "yes"
 app_email = "prabakaran12042002@gmail.com"
 app_license = "mit"
+fixtures = [
+    "Salary Component"  
+]
 
 # Apps
 # ------------------
@@ -23,6 +26,7 @@ app_license = "mit"
 
 # Includes in <head>
 # ------------------
+app_include_js = "/assets/praba/js/employecheckin.js"
 
 # include js, css files in header of desk.html
 # app_include_css = "/assets/praba/css/praba.css"
@@ -147,6 +151,11 @@ app_license = "mit"
 
 # Scheduled Tasks
 # ---------------
+scheduler_events = {
+	"daily": [
+		"praba.www.api.reset_checkin_status"
+	],
+}
 
 # scheduler_events = {
 # 	"all": [
