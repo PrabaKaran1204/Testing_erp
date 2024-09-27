@@ -4,7 +4,13 @@ app_publisher = "prakash"
 app_description = "erpnext"
 app_email = "prakashtds250122@gmail.com"
 app_license = "mit"
+
+fixtures = [
+    "Salary Component"  
+]
+
 # required_apps = []
+
 
 # Includes in <head>
 # ------------------
